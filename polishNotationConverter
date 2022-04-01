@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+
+use 5.26.0; # require at least 5.26
+
+use strict;
+use warnings;
+
+# include current directory in @INC
+use Cwd qw(abs_path);
+use File::Basename qw(dirname);
+use lib dirname(abs_path($0));
+
+use PolishNotation;
+
+my $polishNotation = PolishNotation->new();
+$polishNotation->initPolishNotationConverter();
+
+exit 0;
