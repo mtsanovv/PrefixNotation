@@ -33,8 +33,8 @@ our $OPERATOR_PRIORITIES = {
         stackPriority => 4,
     },
     '^' => {
-        beforePushPriority => 5,
-        stackPriority => 6,
+        beforePushPriority => 6,
+        stackPriority => 5,
     },
 };
 
